@@ -6,7 +6,6 @@
     <title>MOBA SHOP - شحن شدات ببجي</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
-        /* تنسيق عام */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -14,8 +13,6 @@
             color: #00ff88;
             text-align: center;
         }
-
-        /* Navbar */
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -27,7 +24,6 @@
             font-size: 30px;
             font-weight: bold;
             color: #00ff88;
-            text-transform: uppercase;
             text-decoration: none;
         }
         .nav-links {
@@ -40,22 +36,34 @@
             color: #00ff88;
             font-size: 24px;
         }
-        .nav-links a:hover {
-            color: white;
-        }
-
-        /* PUBG Section */
         .pubg-container {
             padding: 50px;
         }
-        .game-header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .game-header img {
-            width: 120px;
+        .description-box {
+            background: white;
+            color: black;
+            padding: 30px;
             border-radius: 10px;
-            border: 2px solid #00ff88;
+            max-width: 650px;
+            margin: 0 auto 40px auto;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            text-align: right;
+            position: relative;
+        }
+        .description-box img {
+            width: 120px;
+            position: absolute;
+            top: -70px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .description-box h2 {
+            text-align: center;
+            font-size: 24px;
+        }
+        .description-box p {
+            font-size: 18px;
+            line-height: 1.6;
         }
         .package-grid {
             display: grid;
@@ -71,17 +79,15 @@
             transition: transform 0.3s ease-in-out;
             text-align: center;
         }
-        .package-card h3 {
-            margin: 0;
-            font-size: 22px;
-        }
-        .package-card p {
-            font-size: 18px;
-            color: #ddd;
-        }
         .package-card:hover {
             transform: scale(1.05);
             background: rgba(255, 255, 255, 0.2);
+        }
+        .package-card h3 {
+            color: #ffcc00;
+        }
+        .package-card p {
+            color: #00ff88;
         }
         button {
             background: #00ff88;
@@ -98,27 +104,29 @@
     </style>
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar">
         <h1 class="logo"><a href="index.html">MOBA SHOP</a></h1>
         <ul class="nav-links">
             <li><a href="index.html"><i class="fas fa-home"></i></a></li>
         </ul>
     </nav>
-
-    <!-- PUBG Section -->
+<img src="https://upload.wikimedia.org/wikipedia/en/4/44/PlayerUnknown%27s_Battlegrounds_Mobile.webp" alt="PUBG Logo">
     <section class="pubg-container">
-        <div class="game-header">
-            <img src="https://upload.wikimedia.org/wikipedia/en/4/44/PlayerUnknown%27s_Battlegrounds_Mobile.webp" alt="PUBG Mobile">
+        <div class="description-box">
+            
+
             <h2>شحن شدات ببجي موبايل</h2>
-            <p>شحن 60 شدة في ببجي موبايل يتم من خلال الطرق الرسمية المعتمدة، وأحد أشهر الطرق هو شحن الشدات عبر موقع الشحن الرسمي لببجي (Midasbuy) أو داخل اللعبة. إليك الخطوات بالتفصيل:<br><br>
-            الطريقة الأولى: عبر موقع Midasbuy الرسمي<br>
-            الدخول إلى الموقع الرسمي: 🔗 Midasbuy – موقع شحن ببجي<br>
-            تحديد الدولة: اختر دولتك لضمان عرض الأسعار الصحيحة.<br>
-            إدخال معرف اللاعب (ID): ستجده في الملف الشخصي داخل اللعبة.<br>
-            اختيار فئة الشحن: اختر 60 شدة.<br>
-            تحديد وسيلة الدفع: تشمل الخيارات (البطاقات الائتمانية، فودافون كاش، رصيد الهاتف، والمحافظ الإلكترونية حسب الدولة).<br>
-            إتمام عملية الدفع: بعد الدفع، سيتم إضافة الشدات إلى حسابك مباشرة.</p>
+            <p>طريقة شحن شدات ببجي رسميًا<br>
+            يمكنك شحن شدات ببجي بسهولة من خلال الموقع الرسمي Midasbuy أو من داخل اللعبة.</p>
+            <p><strong>الطريقة عبر موقع Midasbuy:</strong></p>
+            <ul>
+                <li>اختيار عدد الشدات المطلوب شحنه.</li>
+                <li>الدخول إلى موقع الشحن الرسمي.</li>
+                <li>إدخال معرف اللاعب (ID) من ملفك الشخصي داخل اللعبة.</li>
+                <li>إضافة الـ ID والكود في الموقع من خلال الاستبدال، وسيتم إضافة الشدات لحسابك فورًا.</li>
+            </ul>
+            <p>🔗 <a href="https://www.midasbuy.com/midasbuy/eg/redeem/pubgm" target="_blank">اضغط هنا للشحن</a></p>
+            <p>🔥 لضمان شحن آمن وسريع، تأكد دائمًا من استخدام الطرق الرسمية!</p>
         </div>
 
         <div class="package-grid">
