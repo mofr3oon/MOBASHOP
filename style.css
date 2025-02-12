@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, black, #1a1a1a);
+    color: #00ff88;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 15px 30px;
+}
+
+.logo a {
+    font-size: 30px;
+    font-weight: bold;
+    color: #00ff88;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #00ff88;
+    font-size: 24px;
+}
+
+.pubg-container {
+    padding: 50px;
+}
+
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+.package-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.package-card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.package-card h3 {
+    color: #ffcc00;
+}
+
+.package-card p {
+    color: #00ff88;
+}
+
+button {
+    background: #00ff88;
+    border: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: white;
+}
+
+.description-box {
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 650px;
+    margin: 40px auto 0 auto;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    text-align: right;
+    position: relative;
+}
+
+.description-box img {
+    width: 120px;
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.description-box h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.description-box p {
+    font-size: 18px;
+    line-height: 1.6;
+}
