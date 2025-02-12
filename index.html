@@ -4,13 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOBA SHOP - متجر شدات ببجي</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, black, #1a1a1a);
+            color: #00ff88;
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 15px 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .logo a {
+            font-size: 30px;
+            font-weight: bold;
+            color: #00ff88;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: #222;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 255, 136, 0.5);
+        }
+        .search-box input {
+            border: none;
+            background: transparent;
+            color: white;
+            outline: none;
+            padding: 5px;
+        }
+        .search-box button {
+            background: transparent;
+            border: none;
+            color: #00ff88;
+            cursor: pointer;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #00ff88;
+            font-size: 24px;
+            transition: color 0.3s ease-in-out;
+        }
+        .nav-links a:hover {
+            color: white;
+        }
+        .hero {
+            padding: 120px 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .hero h1 {
+            font-size: 50px;
+            text-shadow: 0 0 10px #00ff88;
+        }
+        .hero p {
+            font-size: 22px;
+        }
+        .games {
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+        }
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            width: 100%;
+        }
+        .game-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+            text-align: center;
+        }
+        .game-card:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .game-card img {
+            width: 100px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .game-title {
+            color: #ffcc00;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <h1 class="logo"><a href="index.html">MOBA SHOP</a></h1>
+        <h1 class="logo"><a href="#home">MOBA SHOP</a></h1>
         <div class="search-box">
             <input type="text" placeholder="ابحث هنا...">
             <button><i class="fas fa-search"></i></button>
@@ -57,112 +159,3 @@
     </section>
 </body>
 </html>
-
-<style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: linear-gradient(to bottom, black, #1a1a1a);
-        color: #00ff88;
-        text-align: center;
-    }
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: rgba(0, 0, 0, 0.9);
-        padding: 15px 30px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    }
-    .logo a {
-        font-size: 30px;
-        font-weight: bold;
-        color: #00ff88;
-        text-transform: uppercase;
-        text-decoration: none;
-    }
-    .search-box {
-        display: flex;
-        align-items: center;
-        background: #222;
-        padding: 5px;
-        border-radius: 5px;
-        box-shadow: 0 0 5px rgba(0, 255, 136, 0.5);
-    }
-    .search-box input {
-        border: none;
-        background: transparent;
-        color: white;
-        outline: none;
-        padding: 5px;
-    }
-    .search-box button {
-        background: transparent;
-        border: none;
-        color: #00ff88;
-        cursor: pointer;
-    }
-    .nav-links {
-        list-style: none;
-        display: flex;
-        gap: 25px;
-    }
-    .nav-links a {
-        text-decoration: none;
-        color: #00ff88;
-        font-size: 24px;
-        transition: color 0.3s ease-in-out;
-    }
-    .nav-links a:hover {
-        color: white;
-    }
-    .hero {
-        padding: 120px 20px;
-        animation: fadeIn 1.5s ease-in-out;
-    }
-    .hero h1 {
-        font-size: 50px;
-        text-shadow: 0 0 10px #00ff88;
-    }
-    .hero p {
-        font-size: 22px;
-    }
-    .games {
-        margin-top: 60px;
-        display: flex;
-        justify-content: center;
-    }
-    .game-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 20px;
-        max-width: 900px;
-        width: 100%;
-    }
-    .game-card {
-        background: rgba(255, 255, 255, 0.1);
-        padding: 15px;
-        border-radius: 10px;
-        transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
-        cursor: pointer;
-    }
-    .game-card img {
-        width: 130px;
-        border-radius: 10px;
-        border: 2px solid #00ff88;
-    }
-    .game-card:hover {
-        transform: scale(1.1);
-        background: rgba(255, 255, 255, 0.2);
-        box-shadow: 0 0 15px #00ff88;
-    }
-    .game-title {
-        color: #00ff88;
-        font-weight: bold;
-        font-size: 18px;
-    }
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
-</style>
