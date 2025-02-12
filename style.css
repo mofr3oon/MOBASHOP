@@ -106,4 +106,13 @@ body {
 }
 
 .game-card img {
-    width:
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.game-title {
+    color: #ffcc00;
+    font-size: 18px;
+    margin-top: 10px;
+}
