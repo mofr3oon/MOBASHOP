@@ -4,58 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOBA SHOP - شحن شدات ببجي</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <head>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <nav class="navbar">
         <h1 class="logo"><a href="index.html">MOBA SHOP</a></h1>
-         <ul class="nav-links">
+        <ul class="nav-links">
             <li><a href="#contact.html"><i class="fas fa-envelope"></i></a></li>
             <li><a href="shop.html"><i class="fas fa-store"></i></a></li>
             <li><a href="#cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-            <li><a href="pubg.html"><i class="fas fa-gamepad"></i></a></li> <!-- تعديل أيقونة ببجي -->
+            <li><a href="pubg.html"><i class="fas fa-gamepad"></i></a></li>
             <li><a href="index.htm"><i class="fas fa-home"></i></a></li>
         </ul>
     </nav>
-    <img src="https://upload.wikimedia.org/wikipedia/en/4/44/PlayerUnknown%27s_Battlegrounds_Mobile.webp" alt="PUBG Logo">
+    
     <section class="pubg-container">
         <div class="package-grid">
-            <div class="package-card">
-                <h3>60 شدة</h3>
-                <p>السعر: 45 جنيه</p>
-                <button>اشترِ الآن</button>
+            <div class="cards-container">
+                <div class="package-card" onclick="showPrice('60 UC', '50 EGP')">
+                    <h3>60 UC</h3>
+                    <img src="https://cdn1.codashop.com/S/content/common/images/denom-image/PUBG/60_PUBG_UC.png" alt="60 UC">
+                </div>
             </div>
-            <div class="package-card">
-                <h3>325 شدة</h3>
-                <p>السعر: 220 جنيه</p>
-                <button>اشترِ الآن</button>
-            </div>
-            <div class="package-card">
-                <h3>660 شدة</h3>
-                <p>السعر: 430 جنيه</p>
-                <button>اشترِ الآن</button>
-            </div>
-            <div class="package-card">
-                <h3>1800 شدة</h3>
-                <p>السعر: 1060 جنيه</p>
-                <button>اشترِ الآن</button>
-            </div>
-            <div class="package-card">
-                <h3>3850 شدة</h3>
-                <p>السعر: 1120 جنيه</p>
-                <button>اشترِ الآن</button>
-            </div>
-            <div class="package-card">
-                <h3>8100 شدة</h3>
-                <p>السعر: 4200 جنيه</p>
-                <button>اشترِ الآن</button>
-            </div>
-        </div>
 
-        <div class="description-box">
-            <h2>شحن شدات ببجي موبايل</h2>
+            <div class="cards-container">
+                <div class="package-card" onclick="showPrice('325 UC', '230 EGP')">
+                    <h3>325 UC</h3>
+                    <img src="https://cdn1.codashop.com/S/content/common/images/denom-image/PUBG/325_PUBG_UC.png" alt="325 UC">
+                </div>
+            </div>
+
+            <div class="cards-container">
+                <div class="package-card" onclick="showPrice('660 UC', '440 EGP')">
+                    <h3>660 UC</h3>
+                    <img src="https://cdn1.codashop.com/S/content/common/images/denom-image/PUBG/660_PUBG_UC.png" alt="660 UC">
+                </div>
+            </div>
+<div class="cards-container">
+                <div class="package-card" onclick="showPrice('1800 UC', '1100 EGP')">
+                    <h3>1800 UC</h3>
+                    <img src="https://cdn1.codashop.com/S/content/common/images/denom-image/PUBG/660_PUBG_UC.png" alt="1800 UC">
+                </div>
+            </div>        
+
+
+<div class="cards-container">
+                <div class="package-card" onclick="showPrice('3850 UC', '2150 EGP')">
+                    <h3>3850 UC</h3>
+                    <img src="https://cdn1.codashop.com/S/content/common/images/denom-image/PUBG/660_PUBG_UC.png" alt="3850 UC">
+                </div>
+           
+ </div>
+<div class="cards-container">
+                <div class="package-card" onclick="showPrice('8100 UC', '4300 EGP')">
+                    <h3>8100 UC</h3>
+                    <img src="https://cdn1.codashop.com/S/content/common/images/denom-image/PUBG/660_PUBG_UC.png" alt="8100 UC">
+                </div>
+            </div>
+
+</div>
+    </section>
+
+    <div class="charging-section">
+        <h2>شحن شدات ببجي موبايل</h2>
             <p>طريقة شحن شدات ببجي رسميًا<br>
             يمكنك شحن شدات ببجي بسهولة من خلال الموقع الرسمي Midasbuy أو من داخل اللعبة.</p>
             <p><strong>الطريقة عبر موقع Midasbuy:</strong></p>
@@ -68,6 +80,40 @@
             <p>🔗 <a href="https://www.midasbuy.com/midasbuy/eg/redeem/pubgm" target="_blank">اضغط هنا للشحن</a></p>
             <p>🔥 لضمان شحن آمن وسريع، تأكد دائمًا من استخدام الطرق الرسمية!</p>
         </div>
-    </section>
+
+  <div class="payment-methods">
+    <div class="payment-method">
+        <div class="payment-title">تحديد طريقة الدفع</div>
+        <ul class="payment-channels">
+            <li class="payment-channel" id="vodafone">
+                <img src="https://cdn1.codashop.com/S/content/common/images/mno/VODAFONE_CASH_EG_CHNL_LOGO.webp" alt="Vodafone Cash" class="channel-logo">
+                <div class="channel-name">Vodafone Cash</div>
+                <div class="channel-price-wrapper">
+                    <span class="channel-price" id="vodafone-price">السعر: إختر باكج لعرض السعر</span>
+                </div>
+            </li>
+            <li class="payment-channel" id="instapay">
+                <img src="https://www.instapay.eg/wp-content/uploads/2022/01/Asset-5@4x-1024x175.png" alt="Instapay" class="channel-logo">
+                <div class="channel-name">Instapay</div>
+                <div class="channel-price-wrapper">
+                    <span class="channel-price" id="instapay-price">السعر: إختر باكج لعرض السعر</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<!-- نافذة منبثقة لرقم التليفون -->
+<div class="popup" id="phone-popup">
+    <div class="popup-content">
+        <h3>ادخل رقم تليفونك</h3>
+        <input type="text" id="phone-number" placeholder="رقم التليفون" required>
+        <button id="submit-phone">تأكيد</button>
+        <button id="close-popup">إغلاق</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
