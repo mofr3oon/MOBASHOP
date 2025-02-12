@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOBA SHOP - شحن شدات ببجي</title>
-    <link rel="stylesheet" href="STPUBG.css"> <!-- رابط ملف الـ CSS المعدل -->
+    <link rel="stylesheet" href="STPUBG.css"> <!-- رابط ملف الـ CSS -->
 </head>
 <body>
 
@@ -24,42 +24,42 @@
     <section class="pubg-container">
         <div class="package-grid">
             <div class="cards-container">
-                <div class="package-card" onclick="showPrice('60 UC', '50 EGP')">
+                <div class="package-card" onclick="selectPackage(this)">
                     <h3>60 UC</h3>
                     <img src="https://cdn1.codashop.com/S/content/common/images/denom-image/PUBG/60_PUBG_UC.png" alt="60 UC">
                 </div>
             </div>
 
             <div class="cards-container">
-                <div class="package-card" onclick="showPrice('325 UC', '230 EGP')">
+                <div class="package-card" onclick="selectPackage(this)">
                     <h3>325 UC</h3>
                     <img src="https://cdn1.codashop.com/S/content/common/images/denom-image/PUBG/325_PUBG_UC.png" alt="325 UC">
                 </div>
             </div>
 
             <div class="cards-container">
-                <div class="package-card" onclick="showPrice('660 UC', '440 EGP')">
+                <div class="package-card" onclick="selectPackage(this)">
                     <h3>660 UC</h3>
                     <img src="https://cdn1.codashop.com/S/content/common/images/denom-image/PUBG/660_PUBG_UC.png" alt="660 UC">
                 </div>
             </div>
             
             <div class="cards-container">
-                <div class="package-card" onclick="showPrice('1800 UC', '1100 EGP')">
+                <div class="package-card" onclick="selectPackage(this)">
                     <h3>1800 UC</h3>
                     <img src="https://cdn1.codashop.com/S/content/common/images/denom-image/PUBG/660_PUBG_UC.png" alt="1800 UC">
                 </div>
             </div>
 
             <div class="cards-container">
-                <div class="package-card" onclick="showPrice('3850 UC', '2150 EGP')">
+                <div class="package-card" onclick="selectPackage(this)">
                     <h3>3850 UC</h3>
                     <img src="https://cdn1.codashop.com/S/content/common/images/denom-image/PUBG/660_PUBG_UC.png" alt="3850 UC">
                 </div>
             </div>
 
             <div class="cards-container">
-                <div class="package-card" onclick="showPrice('8100 UC', '4300 EGP')">
+                <div class="package-card" onclick="selectPackage(this)">
                     <h3>8100 UC</h3>
                     <img src="https://cdn1.codashop.com/S/content/common/images/denom-image/PUBG/660_PUBG_UC.png" alt="8100 UC">
                 </div>
@@ -70,15 +70,16 @@
     <!-- Charging Section -->
     <section class="charging-section">
         <h2>شحن شدات ببجي موبايل</h2>
-        <p>طريقة شحن شدات ببجي بسهولة عبر موقع Midasbuy أو من داخل اللعبة.</p>
+        <p>طريقة شحن شدات ببجي بسهولة من خلال الموقع الرسمي Midasbuy أو من داخل اللعبة.</p>
         <p><strong>الطريقة عبر موقع Midasbuy:</strong></p>
         <ul>
             <li>اختيار عدد الشدات المطلوب شحنه.</li>
             <li>الدخول إلى موقع الشحن الرسمي.</li>
             <li>إدخال معرف اللاعب (ID) من ملفك الشخصي داخل اللعبة.</li>
-            <li>إضافة الـ ID والكود في الموقع من خلال الاستبدال.</li>
+            <li>إضافة الـ ID والكود في الموقع من خلال الاستبدال، وسيتم إضافة الشدات لحسابك فورًا.</li>
         </ul>
         <p>🔗 <a href="https://www.midasbuy.com/midasbuy/eg/redeem/pubgm" target="_blank">اضغط هنا للشحن</a></p>
+        <p>🔥 لضمان شحن آمن وسريع، تأكد دائمًا من استخدام الطرق الرسمية!</p>
     </section>
 
     <!-- Payment Methods -->
@@ -114,7 +115,17 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        // وظيفة لتحديد البكج عند الضغط عليها
+        function selectPackage(packageElement) {
+            // إزالة الجلو من جميع البكجات
+            const allPackages = document.querySelectorAll('.package-card');
+            allPackages.forEach(pkg => pkg.classList.remove('selected'));
+            
+            // إضافة الجلو للبكج المختار
+            packageElement.classList.add('selected');
+        }
+    </script>
 
 </body>
 </html>
