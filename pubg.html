@@ -3,166 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOBA SHOP - شحن شدات ببجي</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, black, #1a1a1a);
-            color: #00ff88;
-            text-align: center;
-        }
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(0, 0, 0, 0.9);
-            padding: 15px 30px;
-        }
-        .logo a {
-            font-size: 30px;
-            font-weight: bold;
-            color: #00ff88;
-            text-decoration: none;
-        }
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 25px;
-        }
-        .nav-links a {
-            text-decoration: none;
-            color: #00ff88;
-            font-size: 24px;
-        }
-        .pubg-container {
-            padding: 50px;
-        }
-        .package-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            max-width: 800px;
-            margin: 0 auto 40px auto;
-        }
-        .package-card {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            transition: transform 0.3s ease-in-out;
-            text-align: center;
-        }
-        .package-card:hover {
-            transform: scale(1.05);
-            background: rgba(255, 255, 255, 0.2);
-        }
-        .package-card h3 {
-            color: #ffcc00;
-        }
-        .package-card p {
-            color: #00ff88;
-        }
-        button {
-            background: #00ff88;
-            border: none;
-            color: black;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-        button:hover {
-            background: white;
-        }
-        .description-box {
-            background: white;
-            color: black;
-            padding: 30px;
-            border-radius: 10px;
-            max-width: 650px;
-            margin: 40px auto 0 auto;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-            text-align: right;
-            position: relative;
-        }
-        .description-box img {
-            width: 120px;
-            position: absolute;
-            top: -70px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        .description-box h2 {
-            text-align: center;
-            font-size: 24px;
-        }
-        .description-box p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-    </style>
+    <title>MOBA SHOP - المتجر</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav class="navbar">
         <h1 class="logo"><a href="index.html">MOBA SHOP</a></h1>
-         <ul class="nav-links">
-            <li><a href="#contact.html"><i class="fas fa-envelope"></i></a></li>
-            <li><a href="shop.html"><i class="fas fa-store"></i></a></li>
-            <li><a href="#cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-            <li><a href="pubg.html"><i class="fas fa-gamepad"></i></a></li> <!-- تعديل أيقونة ببجي -->
-            <li><a href="index.htm"><i class="fas fa-home"></i></a></li>
+        <ul class="nav-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="pubg.html">ببجي</a></li>
+            <li><a href="#cart">السلة</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
         </ul>
     </nav>
-    <img src="https://upload.wikimedia.org/wikipedia/en/4/44/PlayerUnknown%27s_Battlegrounds_Mobile.webp" alt="PUBG Logo">
-    <section class="pubg-container">
-        <div class="package-grid">
-            <div class="package-card">
-                <h3>60 شدة</h3>
-                <p>السعر: 45 جنيه</p>
-                <button>اشترِ الآن</button>
-            </div>
-            <div class="package-card">
-                <h3>325 شدة</h3>
-                <p>السعر: 220 جنيه</p>
-                <button>اشترِ الآن</button>
-            </div>
-            <div class="package-card">
-                <h3>660 شدة</h3>
-                <p>السعر: 430 جنيه</p>
-                <button>اشترِ الآن</button>
-            </div>
-            <div class="package-card">
-                <h3>1800 شدة</h3>
-                <p>السعر: 1060 جنيه</p>
-                <button>اشترِ الآن</button>
-            </div>
-            <div class="package-card">
-                <h3>3850 شدة</h3>
-                <p>السعر: 1120 جنيه</p>
-                <button>اشترِ الآن</button>
-            </div>
-            <div class="package-card">
-                <h3>8100 شدة</h3>
-                <p>السعر: 4200 جنيه</p>
-                <button>اشترِ الآن</button>
-            </div>
-        </div>
+    <header class="hero">
+        <h1>المتجر</h1>
+        <p>تصفح جميع الألعاب والباقات المتوفرة</p>
+    </header>
 
-        <div class="description-box">
-            <h2>شحن شدات ببجي موبايل</h2>
-            <p>طريقة شحن شدات ببجي رسميًا<br>
-            يمكنك شحن شدات ببجي بسهولة من خلال الموقع الرسمي Midasbuy أو من داخل اللعبة.</p>
-            <p><strong>الطريقة عبر موقع Midasbuy:</strong></p>
-            <ul>
-                <li>اختيار عدد الشدات المطلوب شحنه.</li>
-                <li>الدخول إلى موقع الشحن الرسمي.</li>
-                <li>إدخال معرف اللاعب (ID) من ملفك الشخصي داخل اللعبة.</li>
-                <li>إضافة الـ ID والكود في الموقع من خلال الاستبدال، وسيتم إضافة الشدات لحسابك فورًا.</li>
-            </ul>
-            <p>🔗 <a href="https://www.midasbuy.com/midasbuy/eg/redeem/pubgm" target="_blank">اضغط هنا للشحن</a></p>
-            <p>🔥 لضمان شحن آمن وسريع، تأكد دائمًا من استخدام الطرق الرسمية!</p>
-        </div>
+    <section id="products">
+        <h2>المنتجات المتوفرة</h2>
+        <ul>
+            <li>باقة ببجي - 60 شدة</li>
+            <li>باقة ببجي - 660 شدة</li>
+            <li>عملات تيك توك - 3500 عملة</li>
+        </ul>
     </section>
+
+    <footer id="contact">
+        <h2>اتصل بنا</h2>
+        <p>للاستفسارات تواصل معنا عبر البريد الإلكتروني أو الهاتف.</p>
+    </footer>
 </body>
 </html>
