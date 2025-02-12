@@ -4,63 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOBA SHOP - متجر شدات ببجي</title>
-    <!-- تأكد من رابط الـ CSS -->
-    <link rel="stylesheet" href="style.css"> <!-- إذا كان الـ CSS في نفس المجلد -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- رابط ملف الـ CSS -->
 </head>
 <body>
+
     <!-- Navbar -->
     <nav class="navbar">
-        <h1 class="logo"><a href="#home">MOBA SHOP</a></h1>
-        <div class="search-box">
-            <input type="text" placeholder="ابحث هنا...">
-            <button><i class="fa fa-search"></i></button>
-        </div>
+        <h1 class="logo"><a href="index.html">MOBA SHOP</a></h1>
         <ul class="nav-links">
-            <li><a href="contact.html"><i class="fa fa-envelope"></i></a></li>
-            <li><a href="store.html"><i class="fa fa-store"></i></a></li>
-            <li><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
-            <li><a href="pubg.html"><i class="fa fa-gamepad"></i></a></li>
-            <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+            <li><a href="#contact.html"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="shop.html"><i class="fas fa-store"></i></a></li>
+            <li><a href="#cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+            <li><a href="pubg.html"><i class="fas fa-gamepad"></i></a></li>
+            <li><a href="index.html"><i class="fas fa-home"></i></a></li>
         </ul>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero">
+    <section class="hero">
         <h1>MOBA SHOP مرحبًا بك في</h1>
         <p>أفضل الأسعار وأسرع شحن لجميع الباقات</p>
-    </header>
+    </section>
 
     <!-- Game Selection -->
     <section class="games">
-        <div class="game-packages">
-            <div class="game-package">
-                <a href="pubg.html" class="game-card">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/4/44/PlayerUnknown%27s_Battlegrounds_Mobile.webp" alt="PUBG Mobile">
+        <div class="game-container">
+            <div class="game-box">
+                <a href="pubg.html" class="game-link">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/4/44/PlayerUnknown%27s_Battlegrounds_Mobile.webp" alt="PUBG Mobile" class="game-image">
                     <p class="game-title">PUBG Mobile</p>
                 </a>
             </div>
-            <div class="game-package">
-                <a href="https://ff.garena.com" target="_blank" class="game-card">
-                    <img src="https://upload.wikimedia.org/wikipedia/ar/7/78/%D8%BA%D8%A7%D8%B1%D9%8A%D9%86%D8%A7_%D9%81%D8%B1%D9%8A_%D9%81%D8%A7%D9%8A%D8%B1.png" alt="Free Fire">
+            <div class="game-box">
+                <a href="https://ff.garena.com" target="_blank" class="game-link">
+                    <img src="https://upload.wikimedia.org/wikipedia/ar/7/78/%D8%BA%D8%A7%D8%B1%D9%8A%D9%86%D8%A7_%D9%81%D8%B1%D9%8A_%D9%81%D8%A7%D9%8A%D8%B1.png" alt="Free Fire" class="game-image">
                     <p class="game-title">Free Fire</p>
                 </a>
             </div>
-            <div class="game-package">
-                <a href="https://www.konami.com/wepes/mobile" target="_blank" class="game-card">
-                    <img src="https://sm.ign.com/ign_ap/cover/e/efootball-/efootball-2023_ccau.jpg" alt="PES Mobile">
+            <div class="game-box">
+                <a href="https://www.konami.com/wepes/mobile" target="_blank" class="game-link">
+                    <img src="https://sm.ign.com/ign_ap/cover/e/efootball-/efootball-2023_ccau.jpg" alt="PES Mobile" class="game-image">
                     <p class="game-title">PES Mobile</p>
                 </a>
             </div>
-            <div class="game-package">
-                <a href="https://www.weplay.tv/" target="_blank" class="game-card">
-                    <img src="https://play-lh.googleusercontent.com/ut9jCyySsDfNRJEikA4BGSslDYI17BLr5AEaWjpmLopEqyVgiSv2Uwse74O0eP0Xuig" alt="WePlay">
+            <div class="game-box">
+                <a href="https://www.weplay.tv/" target="_blank" class="game-link">
+                    <img src="https://play-lh.googleusercontent.com/ut9jCyySsDfNRJEikA4BGSslDYI17BLr5AEaWjpmLopEqyVgiSv2Uwse74O0eP0Xuig" alt="WePlay" class="game-image">
                     <p class="game-title">WePlay</p>
                 </a>
             </div>
-            <div class="game-package">
-                <a href="https://www.tiktok.com" target="_blank" class="game-card">
-                    <img src="https://i.pinimg.com/1200x/b3/4f/93/b34f936c9b10b73f15bcd55530628df9.jpg" alt="TikTok">
+            <div class="game-box">
+                <a href="https://www.tiktok.com" target="_blank" class="game-link">
+                    <img src="https://i.pinimg.com/1200x/b3/4f/93/b34f936c9b10b73f15bcd55530628df9.jpg" alt="TikTok" class="game-image">
                     <p class="game-title">TikTok</p>
                 </a>
             </div>
