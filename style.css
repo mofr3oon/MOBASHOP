@@ -28,33 +28,6 @@ body {
     color: #00ff88;
     font-size: 24px;
 }
-.pubg-container {
-    padding: 50px;
-}
-.package-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    max-width: 800px;
-    margin: 0 auto 40px auto;
-}
-.package-card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
-    text-align: center;
-}
-.package-card:hover {
-    transform: scale(1.05);
-    background: rgba(255, 255, 255, 0.2);
-}
-.package-card h3 {
-    color: #ffcc00;
-}
-.package-card p {
-    color: #00ff88;
-}
 button {
     background: #00ff88;
     border: none;
@@ -67,16 +40,37 @@ button {
 button:hover {
     background: white;
 }
-.description-box {
+.pubg-container {
+    padding: 50px;
+}
+.package-grid, .store-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 0 auto 40px auto;
+}
+.package-card, .store-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+.package-card:hover, .store-item:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+.package-card h3, .store-item h3 {
+    color: #ffcc00;
+}
+.description-box, .contact-form {
     background: white;
     color: black;
     padding: 30px;
     border-radius: 10px;
-    max-width: 650px;
-    margin: 40px auto 0 auto;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    margin: 40px auto;
     text-align: right;
-    position: relative;
 }
 .description-box img {
     width: 120px;
@@ -85,11 +79,63 @@ button:hover {
     left: 50%;
     transform: translateX(-50%);
 }
-.description-box h2 {
+.hero-section, .about-section {
+    padding: 60px 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
     text-align: center;
-    font-size: 24px;
 }
-.description-box p {
+.hero-section h1, .about-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.hero-section p, .about-section p {
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+.about-section img {
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid #00ff88;
+}
+.cart-table {
+    width: 90%;
+    margin: 50px auto;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+.cart-table th, .cart-table td {
+    padding: 15px;
+    border: 1px solid #00ff88;
+    text-align: left;
+}
+.cart-table th {
+    background: rgba(0, 0, 0, 0.9);
+    color: #00ff88;
+}
+.contact-form h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: left;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
 }
