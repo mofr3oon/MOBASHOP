@@ -747,4 +747,67 @@ button:focus {
 .game-title:hover {
     color: #f39c12;
 }
+/* Style for the game section */
+.games {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.game-box {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.game-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.game-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.game-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.game-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+.hero {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #666;
+}
 
