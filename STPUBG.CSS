@@ -1,17 +1,23 @@
-/* ملف CSS */
-body {
-    font-family: Arial, sans-serif;
+/* Resetting the styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Navbar Styles */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
     background-color: #333;
+    padding: 10px 20px;
 }
 
 .navbar .logo a {
@@ -23,7 +29,6 @@ body {
 .navbar .nav-links {
     display: flex;
     list-style: none;
-    margin: 0;
 }
 
 .navbar .nav-links li {
@@ -36,8 +41,10 @@ body {
     font-size: 18px;
 }
 
+/* PUBG Section Styles */
 .pubg-container {
     padding: 20px;
+    background-color: #fff;
 }
 
 .package-grid {
@@ -53,10 +60,10 @@ body {
 .package-card {
     border: 2px solid #ddd;
     border-radius: 8px;
-    padding: 10px;
-    background-color: #f9f9f9;
+    padding: 15px;
+    background-color: #f4f4f4;
+    transition: transform 0.3s ease;
     cursor: pointer;
-    transition: transform 0.3s;
 }
 
 .package-card:hover {
@@ -69,19 +76,39 @@ body {
     border-radius: 5px;
 }
 
-.charging-section {
-    padding: 20px;
-    background-color: #f4f4f4;
+.package-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
 }
 
-.charging-section ul {
-    padding-left: 20px;
+/* Charging Section */
+.charging-section {
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.charging-section h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.charging-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.charging-section a {
+    text-decoration: none;
+    color: #1e90ff;
 }
 
 .payment-methods {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    margin-top: 20px;
 }
 
 .payment-method {
@@ -105,6 +132,13 @@ body {
     margin-right: 10px;
 }
 
+.payment-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Popup Styles */
 .popup {
     position: fixed;
     top: 0;
@@ -122,12 +156,40 @@ body {
     padding: 20px;
     border-radius: 8px;
     text-align: center;
-    width: 300px;
+    width: 90%;
+    max-width: 400px;
 }
 
+.popup-content h3 {
+    margin-bottom: 15px;
+}
+
+.popup-content input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.popup-content button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.popup-content button:hover {
+    background-color: #555;
+}
+
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .navbar .nav-links {
-        display: block;
+        flex-direction: column;
         text-align: center;
     }
 
@@ -137,6 +199,7 @@ body {
 
     .payment-methods {
         flex-direction: column;
+        align-items: center;
     }
 
     .payment-method {
@@ -146,5 +209,27 @@ body {
 
     .popup-content {
         width: 90%;
+    }
+
+    .package-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .package-card h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .logo a {
+        font-size: 20px;
+    }
+
+    .package-card {
+        padding: 10px;
+    }
+
+    .package-card h3 {
+        font-size: 14px;
     }
 }
