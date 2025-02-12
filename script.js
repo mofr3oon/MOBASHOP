@@ -72,5 +72,16 @@ document.getElementById('close-popup').addEventListener('click', function() {
 function showPrice(package, price) {
     alert("سعر " + package + " هو " + price);
 }
+<script>
+    // وظيفة لتحديد البكج عند الضغط عليها
+    function selectPackage(packageElement) {
+        // إزالة الجلو من جميع البكجات
+        const allPackages = document.querySelectorAll('.package-card');
+        allPackages.forEach(pkg => pkg.classList.remove('selected'));
+        
+        // إضافة الجلو للبكج المختار
+        packageElement.classList.add('selected');
+    }
+</script>
 
 
