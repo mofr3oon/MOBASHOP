@@ -68,3 +68,9 @@ document.querySelectorAll('.payment-channel').forEach(function(channel) {
 document.getElementById('close-popup').addEventListener('click', function() {
     document.getElementById('phone-popup').style.display = 'none';
 });
+
+function showPrice(package, price) {
+    alert("سعر " + package + " هو " + price);
+}
+
+
