@@ -106,13 +106,175 @@
 <body>
     <nav class="navbar">
         <h1 class="logo"><a href="index.html">MOBA SHOP</a></h1>
-         <ul class="nav-links">
-            <li><a href="#contact.html"><i class="fas fa-envelope"></i></a></li>
-            <li><a href="shop.html"><i class="fas fa-store"></i></a></li>
-            <li><a href="#cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-            <li><a href="pubg.html"><i class="fas fa-gamepad"></i></a></li> <!-- تعديل أيقونة ببجي -->
-            <li><a href="index.htm"><i class="fas fa-home"></i></a></li>
-        </ul>
+         <!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOBA SHOP - متجر شدات ببجي</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo"><a href="#home">MOBA SHOP</a></h1>
+        <div class="search-box">
+            <input type="text" placeholder="ابحث هنا...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <ul class="nav-links">
+    <li><a href="contact.html"><i class="fas fa-envelope"></i></a></li>
+    <li><a href="store.html"><i class="fas fa-store"></i></a></li>
+    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+    <li><a href="pubg.html"><i class="fas fa-gamepad"></i></a></li> <!-- رابط ببجي -->
+    <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+</ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>MOBA SHOP مرحبًا بك في</h1>
+        <p>أفضل الأسعار وأسرع شحن لجميع الباقات</p>
+    </header>
+
+    <!-- Game Selection -->
+    <section class="games">
+        <div class="game-grid">
+            <a href="pubg.html" class="game-card"> <!-- تعديل رابط ببجي -->
+                <img src="https://upload.wikimedia.org/wikipedia/en/4/44/PlayerUnknown%27s_Battlegrounds_Mobile.webp" alt="PUBG Mobile">
+                <p class="game-title">PUBG Mobile</p>
+            </a>
+            <a href="https://ff.garena.com" target="_blank" class="game-card">
+                <img src="https://upload.wikimedia.org/wikipedia/ar/7/78/%D8%BA%D8%A7%D8%B1%D9%8A%D9%86%D8%A7_%D9%81%D8%B1%D9%8A_%D9%81%D8%A7%D9%8A%D8%B1.png" alt="Free Fire">
+                <p class="game-title">Free Fire</p>
+            </a>
+            <a href="https://www.konami.com/wepes/mobile" target="_blank" class="game-card">
+                <img src="https://sm.ign.com/ign_ap/cover/e/efootball-/efootball-2023_ccau.jpg" alt="PES Mobile">
+                <p class="game-title">PES Mobile</p>
+            </a>
+            <a href="https://www.weplay.tv/" target="_blank" class="game-card">
+                <img src="https://play-lh.googleusercontent.com/ut9jCyySsDfNRJEikA4BGSslDYI17BLr5AEaWjpmLopEqyVgiSv2Uwse74O0eP0Xuig" alt="WePlay">
+                <p class="game-title">WePlay</p>
+            </a>
+            <a href="https://www.tiktok.com" target="_blank" class="game-card">
+                <img src="https://i.pinimg.com/1200x/b3/4f/93/b34f936c9b10b73f15bcd55530628df9.jpg" alt="TikTok">
+                <p class="game-title">TikTok</p>
+            </a>
+        </div>
+    </section>
+</body>
+</html>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom, black, #1a1a1a);
+        color: #00ff88;
+        text-align: center;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 15px 30px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    .logo a {
+        font-size: 30px;
+        font-weight: bold;
+        color: #00ff88;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    .search-box {
+        display: flex;
+        align-items: center;
+        background: #222;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 255, 136, 0.5);
+    }
+    .search-box input {
+        border: none;
+        background: transparent;
+        color: white;
+        outline: none;
+        padding: 5px;
+    }
+    .search-box button {
+        background: transparent;
+        border: none;
+        color: #00ff88;
+        cursor: pointer;
+    }
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+    }
+    .nav-links a {
+        text-decoration: none;
+        color: #00ff88;
+        font-size: 24px;
+        transition: color 0.3s ease-in-out;
+    }
+    .nav-links a:hover {
+        color: white;
+    }
+    .hero {
+        padding: 120px 20px;
+        animation: fadeIn 1.5s ease-in-out;
+    }
+    .hero h1 {
+        font-size: 50px;
+        text-shadow: 0 0 10px #00ff88;
+    }
+    .hero p {
+        font-size: 22px;
+    }
+    .games {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+    }
+    .game-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+        max-width: 900px;
+        width: 100%;
+    }
+    .game-card {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 15px;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    .game-card img {
+        width: 130px;
+        border-radius: 10px;
+        border: 2px solid #00ff88;
+    }
+    .game-card:hover {
+        transform: scale(1.1);
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 15px #00ff88;
+    }
+    .game-title {
+        color: #00ff88;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+</style>
+
     </nav>
     <img src="https://upload.wikimedia.org/wikipedia/en/4/44/PlayerUnknown%27s_Battlegrounds_Mobile.webp" alt="PUBG Logo">
     <section class="pubg-container">
